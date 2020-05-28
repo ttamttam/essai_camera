@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>essai_camera_resources/pause.svg</file>
+    <file>essai_camera_resources/sun.svg</file>
+    <file>essai_camera_resources/settings.svg</file>
+    <file>essai_camera_resources/folder.svg</file>
+    <file>essai_camera_resources/bookmark.svg</file>
+    <file>essai_camera_resources/units.svg</file>
+    <file>essai_camera_resources/save.svg</file>
+    <file>essai_camera_resources/clean.svg</file>
+    <file>essai_camera_resources/copy.svg</file>
+    <file>essai_camera_resources/home.svg</file>
+    <file>essai_camera_resources/video-off.svg</file>
+    <file>essai_camera_resources/video.svg</file>
+    <file>essai_camera_resources/repeat.svg</file>
+    <file>essai_camera_resources/play.svg</file>
+    <file>essai_camera_resources/minus-square.svg</file>
+    <file>essai_camera_resources/plus-square.svg</file>
+    <file>essai_camera_resources/stage_icon.svg</file>
+    <file>essai_camera_resources/chevron-right.svg</file>
+    <file>essai_camera_resources/chevron-left.svg</file>
+    <file>essai_camera_resources/user-plus.svg</file>
+    <file>essai_camera_resources/user-minus.svg</file>
+  </qresource>
+</RCC>

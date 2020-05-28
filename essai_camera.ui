@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="play_button">
+        <property name="icon">
+         <iconset resource="essai_camera.qrc">
+          <normaloff>:/Icons/essai_camera_resources/play.svg</normaloff>:/Icons/essai_camera_resources/play.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="repeat_button">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="essai_camera.qrc">
+          <normaloff>:/Icons/essai_camera_resources/repeat.svg</normaloff>:/Icons/essai_camera_resources/repeat.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,10">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="essai_camera.qrc">:/Icons/essai_camera_resources/sun.svg</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDoubleSpinBox" name="exposition_spinbox">
+        <property name="keyboardTracking">
+         <bool>false</bool>
+        </property>
+        <property name="suffix">
+         <string> µs</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+        <property name="minimum">
+         <double>32.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>85899331.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>1000.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>50000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="ImageView" name="image_view"/>
+    </item>
+    <item>
+     <widget class="QDateTimeEdit" name="date_time">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string notr="true">yyyy-MM-dd HH:MM:ss</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="camera_status">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string notr="true">    X °C</string>
+      </property>
+      <property name="icon">
+       <iconset resource="essai_camera.qrc">
+        <normaloff>:/Icons/essai_camera_resources/video-off.svg</normaloff>:/Icons/essai_camera_resources/video-off.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="essai_camera.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,29 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+python-language-server = {extras = ["all"],version = "*"}
+pyls-isort = "*"
+pyls-mypy = "*"
+pycodestyle = "*"
+pyflakes = "*"
+pydocstyle = "*"
+autopep8 = "*"
+yapf = "*"
+autoflake = "*"
+ptvsd = "*"
+rope = "*"
+mccabe = "*"
+
+[packages]
+pyside2 = "*"
+imageio = "*"
+matplotlib = "*"
+scipy = "*"
+vimbapython = {editable = true, git = "https://github.com/alliedvision/VimbaPython.git", ref = "master"}
+pyqtgraph = {editable = true, git = "https://github.com/pyqtgraph/pyqtgraph.git", ref = "develop"}
+
+[requires]
+python_full_version = "3.7.3"

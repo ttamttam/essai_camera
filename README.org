@@ -1,0 +1,22 @@
+#+TITLE: Camera tests
+
+* Installation
+
+Install virtual environment with ~pipenv~:
+#+BEGIN_SRC bash
+pip install pipenv
+pipenv install
+#+END_SRC
+
+* Connection/Deconnection
+
+Start ~essai_camera.py~ with `pipenv`: ~pipenv run python essai_camera.py~ with
+the camera up.
+
+If the camera network cable is disconnected, the software detects it, and
+reconnects when the camera is back online.
+
+If the software is started while the camera is unplugged, clicking the camera
+icon does not detect it.
+
+
